@@ -3,19 +3,20 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
+const base = import.meta.env.BASE_URL;
 const projects = [
   {
     title: "PhishGuard",
     category: "Phishing Awareness Web Platform",
     tools: "HTML, CSS, JavaScript, DOM Manipulation, Quiz Logic",
-    image: "/images/phishing.png",
+    image: `${base}images/phishing.png`,
     link: "https://ashishsiwach143.github.io/phishing-awareness-site/",
   },
   {
     title: "Pocket Travel Guide",
     category: "Android Travel Companion App",
     tools: "Kotlin, Android Studio, OpenWeather API, Currency Exchange API",
-    image: "/images/travel.png",
+    image: `${base}images/travel.png`,
     link: "https://github.com/ashishsiwach143/Pocket-Travel-Guide",
   },
 ];
