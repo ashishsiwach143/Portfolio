@@ -11,27 +11,40 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="https://www.linkedin.com/in/akashrmalhotra/"
+                href="https://www.linkedin.com/in/ashish-siwach-01795b328/"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"
               >
-                LinkedIn — akashrmalhotra
+                LinkedIn — ashish-siwach
+              </a>
+            </p>
+            <p>
+              <a
+                href="mailto:ashishforwork051@gmail.com"
+                data-cursor="disable"
+              >
+                ashishforwork051@gmail.com
+              </a>
+            </p>
+            <p>
+              <a href="tel:+918377886639" data-cursor="disable">
+                +91 8377886639
               </a>
             </p>
             <h4>Education</h4>
             <p>
-              PGPWE (MBA), Indian Institute of Management, Lucknow — 2021–2023
+              B.Tech Information Technology, Bharati Vidyapeeth College of
+              Engineering, Pune — 2023–Present
             </p>
             <p>
-              B.Tech Computer Science, Manav Rachna Educational Institutions —
-              2009–2013
+              12th, D.A.V. Public School, Sector 14, Faridabad — 2023
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/akashrmalhotra"
+              href="https://github.com/ashishsiwach143"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -40,7 +53,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/akashrmalhotra/"
+              href="https://www.linkedin.com/in/ashish-siwach-01795b328/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -49,27 +62,18 @@ const Contact = () => {
               LinkedIn <MdArrowOutward />
             </a>
             <a
-              href="https://www.youtube.com/@Leftbraincoder"
+              href="https://x.com/AshishSiwach837"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              YouTube <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com/leftbraincoder/"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
+              X (Twitter) <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Akash Malhotra</span>
+              Designed and Developed <br /> by <span>Ashish Siwach</span>
             </h2>
             <h5>
               <MdCopyright /> 2026

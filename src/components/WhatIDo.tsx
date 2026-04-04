@@ -87,20 +87,21 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>WEB DEVELOPMENT</h3>
+              <h4>Building Things That Actually Hit</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                From vanilla HTML/CSS/JS to full interactive platforms — I build
+                sites with real logic, real UX, and real results. DOM
+                manipulation, event handling, quiz systems — you name it.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">HTML5</div>
+                <div className="what-tags">CSS3</div>
+                <div className="what-tags">JavaScript</div>
+                <div className="what-tags">DOM APIs</div>
+                <div className="what-tags">Responsive Design</div>
+                <div className="what-tags">GitHub Pages</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,21 +125,22 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>VIBE CODING &amp; AI DEV</h3>
+              <h4>Shipping Fast with Claude & AI Tools</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                Got into vibe-coding early — using Claude and AI tools to
+                prototype and ship faster than ever. It's not just copy-paste;
+                it's knowing what to build, how to guide it, and when to
+                take the wheel.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
+                <div className="what-tags">Claude AI</div>
                 <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">Kotlin</div>
+                <div className="what-tags">Android Studio</div>
+                <div className="what-tags">REST APIs</div>
               </div>
               <div className="what-arrow"></div>
             </div>
