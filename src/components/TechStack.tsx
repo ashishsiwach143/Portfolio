@@ -11,6 +11,7 @@ import {
   RapierRigidBody,
 } from "@react-three/rapier";
 
+// Force rebuild hash change
 const textureLoader = new THREE.TextureLoader();
 const base = "/Portfolio/";
 const imageUrls = [
