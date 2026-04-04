@@ -12,7 +12,7 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
-const base = import.meta.env.BASE_URL;
+const base = "/Portfolio/";
 const imageUrls = [
   `${base}images/python.webp`,
   `${base}images/mysql.webp`,
@@ -200,7 +200,7 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files={`${import.meta.env.BASE_URL}models/char_enviorment.hdr`}
+          files="/Portfolio/models/char_enviorment.hdr"
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />

@@ -3,7 +3,7 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
-const base = import.meta.env.BASE_URL;
+const base = "/Portfolio/";
 const projects = [
   {
     title: "PhishGuard",
