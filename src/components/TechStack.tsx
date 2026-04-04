@@ -2,7 +2,6 @@ import * as THREE from "three";
 import { useRef, useMemo, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
-import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import {
   BallCollider,
   Physics,
@@ -13,7 +12,7 @@ import {
 
 // Force rebuild hash change
 const textureLoader = new THREE.TextureLoader();
-const base = "/Portfolio/";
+const base = import.meta.env.BASE_URL;
 const imageUrls = [
   `${base}images/python.webp`,
   `${base}images/mysql.webp`,
@@ -26,7 +25,7 @@ const imageUrls = [
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
-const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
+const sphereGeometry = new THREE.SphereGeometry(1, 12, 12);
 
 const spheres = [...Array(30)].map(() => ({
   scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
@@ -36,7 +35,7 @@ type SphereProps = {
   vec?: THREE.Vector3;
   scale: number;
   r?: typeof THREE.MathUtils.randFloatSpread;
-  material: THREE.MeshPhysicalMaterial;
+  material: THREE.MeshStandardMaterial;
   isActive: boolean;
 };
 
@@ -156,14 +155,13 @@ const TechStack = () => {
   const materials = useMemo(() => {
     return textures.map(
       (texture) =>
-        new THREE.MeshPhysicalMaterial({
+        new THREE.MeshStandardMaterial({
           map: texture,
           emissive: "#ffffff",
           emissiveMap: texture,
           emissiveIntensity: 0.3,
           metalness: 0.5,
           roughness: 1,
-          clearcoat: 0.1,
         })
     );
   }, []);
@@ -174,6 +172,7 @@ const TechStack = () => {
 
       <Canvas
         shadows
+        dpr={[1, 1.5]}
         gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
         camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
         onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
@@ -186,7 +185,7 @@ const TechStack = () => {
           angle={0.2}
           color="white"
           castShadow
-          shadow-mapSize={[512, 512]}
+          shadow-mapSize={[256, 256]}
         />
         <directionalLight position={[0, 5, -4]} intensity={2} />
         <Physics gravity={[0, 0, 0]}>
@@ -201,13 +200,10 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files="/Portfolio/models/char_enviorment.hdr"
+          files={`${import.meta.env.BASE_URL}models/char_enviorment.hdr`}
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />
-        <EffectComposer enableNormalPass={false}>
-          <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
-        </EffectComposer>
       </Canvas>
     </div>
   );

@@ -91,6 +91,7 @@ const SocialIcons = () => {
         href="/Ashish_Siwach.pdf"
         target="_blank"
         rel="noreferrer"
+        download="Ashish_Siwach.pdf"
       >
         <HoverLinks text="RESUME" />
         <span>
