@@ -4,9 +4,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
-import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
-import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -86,18 +84,6 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a
-        className="resume-button"
-        href="/Ashish_Siwach.pdf"
-        target="_blank"
-        rel="noreferrer"
-        download="Ashish_Siwach.pdf"
-      >
-        <HoverLinks text="RESUME" />
-        <span>
-          <TbNotes />
-        </span>
-      </a>
     </div>
   );
 };
